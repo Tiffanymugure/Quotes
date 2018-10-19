@@ -14,8 +14,32 @@ export class QuoteComponent implements OnInit {
    new Quote(2,"If we have no peace,it is because we have forgotten we belong to each other.","Mother Theresa","Hamida",0,0,new Date(2018,10,17)),
        ];
 
-       constructor() { }
+       toggleDetails(index){
+          this.quotes[index].showAuthor=!this.quotes[index].showAuthor;
+          this.quotes[index].showFan=!this.quotes[index].showFan;
+        }
+        upvote(index){
+          this.quotes[index].upvotes++;
+        }
+        downvote(index){
+          this.quotes[index].downvotes++;
+        }
+        deleteQuote(isComplete,index){
+               if (isComplete){
+                   let toDelete=confirm(`Are you sure you ${this.quotes[index].name}`)
 
-       ngOnInit() {
+                   if(toDelete){
+                       this.quotes.splice(index,1)
+                   }
+               }
+           }
+           addNewQuote(quote){
+            this.quotes.push(quote)
+
+        }
+         constructor() { }
+
+         ngOnInit() {
+         }
+
        }
-     }  

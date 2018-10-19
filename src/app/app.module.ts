@@ -1,22 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
-import { QuotesComponent } from './quotes/quotes.component';
-import { Quotes } from './quotes.form/quotes.form.component';
-import { GoalDetailsComponent } from './goal-details/goal-details.component';
+import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { DateCountPipe } from './date-count.pipe';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuotesComponent,
-    Quotes.FormComponent,
-    GoalDetailsComponent,
-    QuoteDetailsComponent
+    QuoteComponent,
+    QuoteDetailsComponent,
+    QuoteFormComponent,
+    DateCountPipe,
+    StrikethroughDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
