@@ -1,10 +1,10 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import {Quote} from '../quote'
+import {Quote} from '../quotes'
 
 @Component({
-  selector: 'app-root',
-  templateUrl: '../app/app.component.html',
-  styleUrls: ['../app/app.component.css']
+  selector: 'app-quote-form',
+  templateUrl: 'quotes.form.component.html',
+  styleUrls: ['quotes.form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
 newQuote= new Quote(0,"","","",0,0,new Date());
