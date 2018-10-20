@@ -1,0 +1,14 @@
+form{
+  width: 50%;
+  color:black;
+  text-align: justify;
+
+}
+#go{
+  background-color:skyblue;
+  border-radius: 10px;
+  border: 2px solid lightblue;
+}
+#go:hover{
+  color: white;
+}
