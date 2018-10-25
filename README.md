@@ -13,7 +13,7 @@ Clone this repository from my Github account Tiffanymugure.
 
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-Application live site.
+Application live site.https://tiffanymugure.github.io/tQuotes/
 
 To view this application,click on Quotes.
 
